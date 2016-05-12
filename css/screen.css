@@ -183,12 +183,12 @@ td {
 /**
     Clear fix
 */
-.clear:before, .container:before, .clear:after, .container:after {
+.clear:before, .container:before, #index section .imei:before, #index section .imei .form-control:before, .clear:after, .container:after, #index section .imei:after, #index section .imei .form-control:after {
   content: " ";
   display: table;
 }
 
-.clear:after, .container:after {
+.clear:after, .container:after, #index section .imei:after, #index section .imei .form-control:after {
   clear: both;
 }
 
@@ -197,6 +197,7 @@ td {
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -258,6 +259,10 @@ header a.xperiax {
   float: right;
 }
 
+footer {
+  margin-top: 123px;
+}
+
 footer .join {
   height: 78px;
   background-color: #2fa5ff;
@@ -286,7 +291,7 @@ footer section p {
   line-height: 1.28;
   font-size: 14px;
   letter-spacing: 0.010em;
-  font-weight: 500;
+  font-weight: 600;
   padding: 65px 0 64px 60px;
 }
 
@@ -296,8 +301,173 @@ footer section p a {
 }
 
 #index {
-  min-width: 1970px;
-  background-color: #272727;
+  min-height: 1970px;
+  width: 860px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: url("../images/index/x-background.png") no-repeat center;
+  background-size: contain;
+}
+
+#index header {
+  padding: 0;
+}
+
+#index header h1 {
+  font-size: 52px;
+  letter-spacing: 0.010em;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 131px;
+  position: relative;
+}
+
+#index header h1:after {
+  background-color: #9f4891;
+  height: 1px;
+  content: " ";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+}
+
+#index .i-button {
+  top: 134px;
+  left: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../images/index/i-button.png") no-repeat center;
+  position: absolute;
+}
+
+#index section .hidden {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+#index section .choose-again {
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.27;
+  padding: 90px 120px 35px 120px;
+}
+
+#index section .caret {
+  width: 53px;
+  height: 18px;
+  background: url("../images/index/caret.png") no-repeat center;
+  margin: 0 auto;
+}
+
+#index section .imei {
+  border-top: 1px solid #9f4891;
+  border-bottom: 1px solid #9f4891;
+  margin-top: 20px;
+  padding: 8px 0 53px 0;
+}
+
+#index section .imei .form-control {
+  margin-top: 28px;
+}
+
+#index section .imei .form-control .left, #index section .imei .form-control .right {
+  width: 50%;
+  float: left;
+}
+
+#index section .imei .form-control .left {
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.010em;
+  font-weight: 600;
+}
+
+#index section .imei .form-control .right [type="text"] {
+  border-radius: 2px;
+  background-color: #fff;
+  display: block;
+  height: 47px;
+  padding: 0 52px 0 10px;
+  width: 100%;
+  border: 0;
+}
+
+#index section .imei .form-control .right span {
+  font-size: 14px;
+  display: block;
+  padding-top: 7px;
+  letter-spacing: 0.010em;
+}
+
+#index section .imei .form-control .right span sup {
+  font-size: 6px;
+}
+
+#index section .imei .form-control .right .input-help {
+  position: relative;
+}
+
+#index section .imei .form-control .right .input-help .i-help {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  width: 32px;
+  height: 32px;
+  background: url("../images/index/help.png") no-repeat center;
+}
+
+#index section .imei .submit {
+  border-top: 1px solid #9f4891;
+  padding-top: 38px;
+  margin-top: 23px;
+}
+
+#index section .imei .submit .left, #index section .imei .submit .right {
+  width: 50%;
+  float: left;
+}
+
+#index section .imei .submit .left {
+  font-size: 22px;
+  line-height: 1.27;
+  font-weight: 600;
+  letter-spacing: 0.010em;
+  padding-top: 4px;
+}
+
+#index section .imei .submit .right label {
+  display: block;
+  width: 220px;
+  height: 60px;
+  border-radius: 2px;
+  background-color: #9f4891;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.010em;
+  line-height: 60px;
+  cursor: pointer;
+  float: right;
+}
+
+#index section .imei .submit .right .i-upload {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../images/index/help.png") no-repeat center;
+  float: right;
+  margin: 15px 16px 15px 16px;
+}
+
+#index h2 {
+  font-size: 22px;
+  letter-spacing: 0.010em;
+  font-weight: 600;
 }
 
 /*==========  Mobile First Method  ==========*/

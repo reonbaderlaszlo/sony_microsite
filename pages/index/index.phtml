@@ -1,7 +1,57 @@
 <?php echo $header; ?>
 <main>
-	<section id="index" class="container">
-		
-	</section>
+<section id="index" class="container">
+		<a href="#" class="i-button"></a>
+		<div class="information-popup"></div>
+		<header>
+			<h1>Hangot adunk a hűségednek</h1>
+		</header>
+		<section>
+			<p class="choose-again">Válaszd újra a Sonyt, vásárolj egy Xperia X okostelefont és megajándékozunk egy Sony SBH60 sztereó bluetooth headsettel!</p>
+			<div class="caret"></div>
+			<form method="post" class="imei">
+				<input type="hidden" name="filename">
+				<div class="form-control">
+					<div class="left">Kérlek, add meg előző Xperia okostelefonod IMEI számát*</div>
+					<div class="right">
+						<div class="imei-popup"></div>
+						<div class="input-help">
+							<input type="text" required>
+							<a href="#" class="i-help"></a>
+							<span><sup>*</sup> a mező kitöltése kötelező</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-control">
+					<div class="left">Kérlek, add meg új Xperia okostelefonod IMEI számát*</div>
+					<div class="right">
+						<div class="imei-popup"></div>
+						<div class="input-help">
+							<input type="text" required>
+							<a href="#" class="i-help"></a>
+							<span><sup>*</sup> a mező kitöltése kötelező</span>
+						</div>
+					</div>
+				</div>
+				<div class="submit">
+					<div class="left">Töltsd fel az új Xperia X okostelefonod vásárlását igazoló dokumentumot!</div>
+					<div class="right">
+						<div class="upload-popup"></div>
+						<a href="#" class="i-upload"></a>
+						<label for="file">Feltöltés</label>
+					</div>
+				</div>
+			</form>
+			<form class="hidden" enctype="multipart/form-data" method="post">
+				<input type="file" name="image" id="file">
+			</form>
+		</section>
+		<section>
+			<h2>A szállítással kapcsolatos további kapcsolattartás érdekében, kérlek, hogy az alábbi adataidat add meg:</h2>
+			<form method="post">
+				
+			</form>
+		</section>
+</section>
 </main>
 <?php echo $footer; ?>

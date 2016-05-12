@@ -1,4 +1,179 @@
-#index{
-	min-width: 1970px;
-	background-color: #272727;
+#index {
+    min-height: 1970px;
+    width: 860px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: url("../images/index/x-background.png") no-repeat center;
+    background-size: contain;
+
+    header {
+        padding: 0;
+
+        h1 {
+            font-size: 52px;
+            letter-spacing: 0.010em;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 131px;
+            position: relative;
+
+            &:after {
+                background-color: #9f4891;
+                height: 1px;
+                content: " ";
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -45px;
+            }
+        }
+    }
+
+    .i-button {
+        top: 134px;
+        left: 0;
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url("../images/index/i-button.png") no-repeat center;
+        position: absolute;
+    }
+
+    section {
+        .hidden {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+
+        .choose-again {
+            text-align: center;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 1.27;
+            padding: 90px 120px 35px 120px;
+        }
+
+        .caret {
+            width: 53px;
+            height: 18px;
+            background: url("../images/index/caret.png") no-repeat center;
+            margin: 0 auto;
+        }
+
+        .imei {
+            border-top: 1px solid #9f4891;
+            border-bottom: 1px solid #9f4891;
+            margin-top: 20px;
+            padding: 8px 0 53px 0;
+
+            @extend .clear;
+
+            .form-control {
+                @extend .clear;
+
+                margin-top: 28px;
+
+                .left, .right {
+                    width: 50%;
+                    float: left;
+                }
+
+                .left {
+                    font-size: 22px;
+                    line-height: 1.18;
+                    letter-spacing: 0.010em;
+                    font-weight: 600;
+                }
+
+                .right {
+                    [type="text"] {
+                        border-radius: 2px;
+                        background-color: #fff;
+                        display: block;
+                        height: 47px;
+                        padding: 0 52px 0 10px;
+                        width: 100%;
+                        border: 0;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        display: block;
+                        padding-top: 7px;
+                        letter-spacing: 0.010em;
+
+                        sup {
+                            font-size: 6px;
+                        }
+                    }
+
+                    .input-help {
+                        position: relative;
+
+                        .i-help {
+                            display: block;
+                            position: absolute;
+                            right: 10px;
+                            top: 8px;
+                            width: 32px;
+                            height: 32px;
+                            background: url("../images/index/help.png") no-repeat center;
+                        }
+                    }
+                }
+            }
+
+            .submit {
+                border-top: 1px solid #9f4891;
+                padding-top: 38px;
+                margin-top: 23px;
+
+                .left, .right {
+                    width: 50%;
+                    float: left;
+                }
+
+                .left {
+                    font-size: 22px;
+                    line-height: 1.27;
+                    font-weight: 600;
+                    letter-spacing: 0.010em;
+                    padding-top: 4px;
+                }
+
+                .right {
+                    label {
+                        display: block;
+                        width: 220px;
+                        height: 60px;
+                        border-radius: 2px;
+                        background-color: #9f4891;
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 22px;
+                        letter-spacing: 0.010em;
+                        line-height: 60px;
+                        cursor: pointer;
+                        float: right;
+                    }
+
+                    .i-upload {
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                        background: url("../images/index/help.png") no-repeat center;
+                        float: right;
+                        margin: 15px 16px 15px 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    h2 {
+        font-size: 22px;
+        letter-spacing: 0.010em;
+        font-weight: 600;
+    }
 }
