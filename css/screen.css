@@ -14,6 +14,7 @@ body {
   background: url("../images/base/background.png") no-repeat center top;
   background-size: cover;
   font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
 }
 
 @media screen and (max-width: 767px) {
@@ -255,6 +256,48 @@ header a.xperiax {
   height: 25px;
   background: url("../images/header/xperia-x-logo.png") no-repeat center;
   float: right;
+}
+
+footer .join {
+  height: 78px;
+  background-color: #2fa5ff;
+}
+
+footer .join p {
+  float: left;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.010em;
+  line-height: 3.25;
+}
+
+footer .join .fb-like {
+  float: right;
+  margin: 29px 0;
+}
+
+footer section {
+  height: 163px;
+  background-color: #272727;
+}
+
+footer section p {
+  background: url("../images/footer/mail.png") no-repeat center left;
+  line-height: 1.28;
+  font-size: 14px;
+  letter-spacing: 0.010em;
+  font-weight: 500;
+  padding: 65px 0 64px 60px;
+}
+
+footer section p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#index {
+  min-width: 1970px;
+  background-color: #272727;
 }
 
 /*==========  Mobile First Method  ==========*/

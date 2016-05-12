@@ -1,0 +1,33 @@
+footer{
+	.join{
+		height: 78px;
+		background-color: #2fa5ff;
+		p{
+			float: left;
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: 0.010em;
+			line-height: 3.25;
+		}
+		.fb-like{
+			float: right;
+			margin: 29px 0;
+		}
+	}
+	section{
+		height: 163px;
+		background-color: #272727;
+		p{
+			background: url('../images/footer/mail.png') no-repeat center left;
+			line-height: 1.28;
+			font-size: 14px;
+			letter-spacing: 0.010em;
+			font-weight: 500;
+			padding: 65px 0 64px 60px;
+			a{
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+	}
+}
